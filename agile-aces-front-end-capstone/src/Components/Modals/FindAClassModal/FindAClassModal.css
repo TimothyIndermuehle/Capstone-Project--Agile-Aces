@@ -1,0 +1,49 @@
+#findAClassModal {
+  align-items: center;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  height: 66vh;
+  width: 450px; 
+}
+#sectionBox {
+  cursor: pointer;
+  height: 75%;
+  outline: solid 1px #8A9968;
+  overflow-y: scroll;
+  width: 95%;
+} 
+#classSearchBar {
+  display: flex;
+  cursor: pointer;
+  margin: 1em;
+  margin-left: -15%;
+  width: 17rem;
+  align-items: flex-start;
+  padding-left: .5rem;
+} 
+#findAClassList {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+}
+#findAClassModal span {
+  align-self: flex-end;
+}
+
+summary{
+  display: block;
+}
+
+.teachLine {
+  font-weight: bolder;
+  margin-bottom: -2%;
+}
+
+@media only screen and (max-width: 420px) 
+{
+  #findAClassModal {
+    width: 100vw;
+    height: 100vh;  
+  } 
+}

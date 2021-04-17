@@ -1,0 +1,49 @@
+.navbar-brand img {
+    height: 50px;
+    width: 50px;
+  }
+#navContainer {
+  box-shadow: 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#openClassList label {
+  white-space: nowrap;
+}
+
+#navbarDropdownMenuLink{
+  color: #0a0908;
+  cursor: pointer;
+}
+.dropdown-toggle::after {
+  display:none;
+}
+
+.nav-item{
+  padding: 0 1%;
+}
+
+.dropdown-menu{
+ min-width: .9rem;
+ /* margin-right: 10px;
+ padding-right:0; */
+}
+
+#mobile {
+  display: none; 
+  /* font-size: 45px; */
+}
+
+/* .desktop {
+  display: block;
+} */
+
+
+@media screen and (max-width: 450px){
+  #navbarDropdownMenuLink {
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+

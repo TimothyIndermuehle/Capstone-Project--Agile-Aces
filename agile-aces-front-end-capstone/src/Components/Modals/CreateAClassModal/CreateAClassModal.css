@@ -1,0 +1,78 @@
+#createAClassModal {
+  align-items:center;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+}
+
+/* #createAClassModal form {
+  width: 90vw;
+} */
+#createAClassModal input[type=date] {
+  width: 40%;
+}
+#createAClassModal p {
+  margin-bottom: .5%;
+}
+#createAClassModal .close{
+  align-self: flex-end;
+}
+#days, #time-from, #pvt {
+  margin: 3% 0 0 0;
+}
+.text-box {
+  margin: 1% 0;
+  width: 100%;
+}
+.date-from {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+}
+.days-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#createAClassSubmit button {
+  background-color: #8A9968;
+  color: white;
+  cursor: pointer;
+  font-size: 1.15rem;
+  margin: 2% 0;
+  padding: 0.3125rem ;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow:0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#createAClassSubmit button:hover {
+  background-color: #C63B3C;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+#createAClass input[type="checkbox"] {
+  margin-right: 5px;
+}
+#createAClassModal input[type=date] {
+  width: 42.75%;
+}
+@media only screen and (max-width: 450px) 
+{
+  #createAClassModal {
+    width: 100vw;
+    height: 100vh;  
+  
+  } 
+}
+
+@media only screen and (max-width: 321px) 
+{
+  #createAClassModal form{
+    width: 90vw;
+    /* height: 100vh;   */
+    
+  } 
+}

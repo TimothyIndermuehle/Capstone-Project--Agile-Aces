@@ -1,0 +1,130 @@
+h3 {
+  margin-top: .5rem;
+  font-size: 1.5rem;
+}
+
+#listHeader{
+  padding-left: 4%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color:#8A9968;
+  color: white;
+  margin-bottom: .5rem;
+}
+
+.dashboardList li {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 0px;
+}
+.dashboardTitle,
+.dashboardDays,
+.dashboardTimes
+ {
+  padding-top: .75rem;
+}
+.dashboardList .teacher:hover {
+cursor: pointer;
+color: #C63B3C;
+}
+
+.dashboardList .student:hover {
+  cursor: pointer;
+  color: #C63B3C;
+}
+
+.classListHeaders {
+ padding-top: 0;
+}
+
+.scroll {
+  height: 31vh;
+  overflow: scroll;
+}
+
+.dashboardButton{
+  max-height: 2.5rem;
+  margin-left: 20px;
+  width: 80%;
+  white-space: nowrap;
+}
+.alertIcon{
+  height: 1.875rem;
+  padding-right: 	0.625rem;
+  padding-bottom: .3rem;
+
+}
+.dashboardDays {
+  text-transform: capitalize;
+} 
+
+@media (min-width: 575.9px) and (max-width: 768px) {
+  #listHeader {
+    display: none;
+  }
+  #daysHeader, #timeHeader, .dashboardDays, .dashboardTimes {
+    display: none;
+  }
+  .dashboardList li {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .dashboardTitle {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+  }
+  .dashboardButton {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    margin-top: 0px;
+    max-width: 99%;
+    max-height: 40px;
+  }
+  .dashboardList ul {
+    margin-left: 0%;
+    margin-right: 0%; 
+  }
+}
+
+@media only screen and (max-width: 575.9px){
+  #listHeader {
+    display: none;
+  }
+  .dashboardList li {
+    text-align: center;
+  }
+  .listHeader {
+    display: none;
+  }
+
+  #daysHeader, #timeHeader, .dashboardDays, .dashboardTimes {
+    display: none;
+  }
+  .dashboardList li {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .dashboardTitle {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+  }
+  .dashboardButton {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    margin-top: 0px;
+    max-width: 99%;
+    max-height: 40px;
+  }
+  .dashboardList ul {
+    margin-left: 0%;
+    margin-right: 0%; 
+    padding: 0;
+}
+}

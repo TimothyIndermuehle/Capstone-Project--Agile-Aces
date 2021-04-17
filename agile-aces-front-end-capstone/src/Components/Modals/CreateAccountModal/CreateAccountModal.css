@@ -1,0 +1,71 @@
+#CreateAccountModal{
+  background: white;
+}
+#CreateAccountModal span {
+  align-self: flex-end;
+}
+#CreateAccountModal h1 {
+  text-align: center;
+  padding-bottom: 5%;
+}
+#CreateAccountModal p {
+  text-align: center;
+  padding-top: 2%;
+}
+#CreateAccountModal form {
+  display: flex;
+  flex-direction: column;
+}
+#CreateAccountModal form input[type=submit] {
+  background-color: #8A9968;
+  border-radius: 8px;
+  box-shadow:0 6px 20px 0 rgba(0,0,0,0.19);
+  color: white;
+  cursor: pointer;
+  font-size:x 1.15rem;
+  font-weight: 700;
+  padding: 1rem;
+  text-align: center;
+}
+
+#CreateAccountModal form input[type=submit]:hover{
+  background-color:#C63B3C; /*afa49d*/
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s; /* Safari */
+}
+.cancel {
+  color:#c95657;
+}
+.cancel:hover {
+  color: #C63B3C;
+}
+#fb-google-buttons {
+  align-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+ }
+#fb-google-butons button {
+  box-shadow:0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-top: 5%;
+  margin-bottom: 7%;
+}
+.noMatch {
+  background-color: lightpink;
+}
+
+@media screen and (max-width: 360px)
+{
+  #CreateAccountModal{
+    width: 100vh;
+    height: 100vh;
+  }
+  .our-modal/*if this breaks it's because I modified it under "manage student models.css"*/
+  {
+    /* height: 100vh; */
+    line-height: 1em
+  } 
+  #CreateAccountModal h1 {
+    padding-top: 15%;
+  }
+}

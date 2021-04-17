@@ -1,0 +1,78 @@
+#AccountManagementModal {
+  background: white;
+  text-align: center;
+}
+#AccountManagementModal h1 {
+  padding: .5em;
+  text-align: center;
+}
+#AccountManagementModal form {
+  align-content: center;
+  display: flex;  
+  flex-direction: column;
+}
+ #AccountManagementModal form input {
+  display:flex;
+  flex-direction: column; 
+  margin-bottom: 1rem; 
+  padding-right: 7em;
+  width: 100%; 
+} 
+#AccountManagementModal form input[type=submit] {
+  background-color: #8A9968;
+  border-radius: 8px;
+  box-shadow:0 6px 20px 0 rgba(0,0,0,0.19);
+  color: white;
+  cursor: pointer;
+  margin: auto;
+  font-size: 1.15rem;
+  padding-left: 40%;
+  width: 100%; 
+}
+.AccountManagementModal form {
+  padding: 0 3em 1em 3em;
+}
+#AccountManagementModal .cancel {
+  align-self: center;
+  border-top: 10%;
+  color:#c95657;
+  margin-top: 1em;
+}
+#AccountManagementModal .cancel:hover {
+  color:#C63B3C; 
+}
+#AccountManagementModal p {
+  font-style: italic;
+}
+
+@media screen and (max-width: 360px)
+{
+  .our-modal {
+    width: 90%;
+    height: 80vh;
+    line-height: 1em;
+  } 
+  #AccountManagementModal span {
+    align-self: flex-end; 
+    padding-right: 1rem;
+    margin: auto;
+  }
+   #AccountManagementModal form input[type=submit] {   
+    padding: 3% 0% 3% 40%;
+  }
+}
+
+@media screen and (max-width: 450px){
+  #AccountManagementModal {
+    height: 100vh;
+    width: 100vh;
+  }
+  #AccountManagementModal span {
+    margin: 0;
+    padding-right: .5em;
+  }
+  #AccountManagementModal h1 {
+    text-align: center;
+    padding-left: 1.2em;
+  }
+}

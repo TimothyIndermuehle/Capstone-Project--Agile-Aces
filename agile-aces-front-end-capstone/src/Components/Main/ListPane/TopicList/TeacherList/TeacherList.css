@@ -1,0 +1,151 @@
+.hidden {
+    display: none;
+  }
+
+  .questionList ul {
+    padding-left: 0;
+  }
+
+  ul .questionListItem {
+    align-items: baseline;
+    background-color: #F7F1F0;
+    border: solid  #8A9968 1px;
+    border-radius: 4px;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr auto;
+    margin-top: 2%;
+  }
+  .topic {
+    border-bottom: solid #8a9968 1px;
+    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr auto auto;
+    margin: 2% 4% 2% 4%;
+    padding: 2%;
+  }
+  .topic:hover{
+    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.35);
+  }
+  .questionList .questionListItem .questionVoteParagraph {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: start;
+    padding-left: 1%;
+  }
+  .questionList .questionListItem .questionQuestion {
+    align-self: left;
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 6;
+    justify-self: start;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-align: left;
+  }
+  .questionQuestion {
+    max-width: 100%;
+  }
+  .topic h3 {
+    grid-column: 1 / span 6;
+    grid-row: 1/ span 1;
+    justify-self: start;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+  .topic p {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+    justify-self: start;
+  }
+  .topic .questionList {
+    grid-column: 1 / span 6;
+    display: grid;
+  }
+  .topic .topicButtons{
+    display: flex;
+    justify-self: flex-end;
+    grid-column: 5 / span 2;
+    grid-row: 1 / span 1;
+  }
+  .add-vote {
+    background-color: #C63B3C;
+    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.19);
+    color: white;
+    font-size: 1rem;
+  }
+  .add-vote:hover {
+    background-color: #8A9968;
+    color: white;
+    font-size: 1rem;
+  }
+  .btn{
+    margin: 3px;
+  }
+  .btn-main {
+    background-color: #8E8076;
+  }
+  .topic .view-create-buttons {
+    grid-column: 2 / span 5;
+    grid-row: 2 / span 1;
+    justify-self: end;
+  }
+  .create-button {
+    grid-column: 4 / span 3;
+    justify-self: start;
+  }
+  .editQuestion {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    justify-self: start;
+  }
+  .questionVoteParagraph {
+    grid-column: 1 / span 1;
+  }
+  .blank {
+    font-style: italic;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  
+  
+  @media (min-width: 400px) and (max-width: 575.9px) {
+    .topic p {
+      grid-column: 1 / span 3;
+      grid-row: 2 / span 1;
+      justify-self: start;
+    }
+    .topic .view-create-buttons {
+      width: 100%;
+      grid-row: 3 / span 1;
+      grid-column: 1 / span 6;
+    }
+  }
+  @media only screen and (max-width: 400px){
+    .topic p {
+      grid-column: 1 / span 6;
+      justify-self: start;
+    }
+    .topic .topicButtons{
+      display: flex;
+      grid-column: 5 / span 2;
+      justify-self: flex-end
+    }
+    .topic {
+      grid-template-rows: 1fr auto auto auto;
+    }
+    .topic .view-create-buttons {
+      width: 100%;
+      grid-row: 3 / span 1;
+      grid-column: 1 / span 6;
+    }
+    .questionListButton {
+      width: 100%;
+    }
+    
+  }
+  

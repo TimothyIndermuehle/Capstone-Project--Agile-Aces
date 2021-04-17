@@ -1,0 +1,58 @@
+/* colors
+background white #F7F1F0
+Logo Red #C63B3C
+Font black #0a0908
+Accent green #8A9968
+Accent brown #8E8076 */
+
+
+@font-face {
+  font-family: 'brusherbold';
+  src: url(./fonts/Brusher.otf) format('otf'),
+       url(./fonts/Brusher.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+background-color: #f7f1f0;
+font-family: 'Roboto', sans-serif;
+color: #0a0908;
+}
+
+h1 {
+font-family: 'brusherbold';
+}
+
+h2 {
+font-family: 'brusherbold';
+}
+
+input[type=text], input[type=email], input[type=password], input[type=date], input[type=time], textarea{
+border: 1px solid #8A9968;;
+border-radius: 4px;
+padding: .5rem;
+}
+
+.btn {
+color: white;
+align-items: flex-start;
+border-radius: 8px;
+box-shadow:0 6px 20px 0 rgba(0,0,0,0.19);
+background-color: #8A9968;
+}
+
+.btn:hover  {
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+}
+.btn:hover {
+background-color: #C63B3C; /*adb795*/
+color: white;
+}
+
+
+

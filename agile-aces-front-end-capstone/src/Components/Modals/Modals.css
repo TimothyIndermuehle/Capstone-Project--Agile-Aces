@@ -1,0 +1,30 @@
+@keyframes modalFade
+{
+  from {transform: translateY(0);opacity: 0;}
+  to {transform: translateY(0);opacity: 1;}
+}
+
+.Modals {
+  align-items: center;
+  animation-name: modalFade;
+  animation-duration: .5s;
+  background-color: rgba(105,105,105,0.5);
+  left: 0;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  }
+  .our-modal {
+  border: 1px solid #8a9968;
+  border-radius: 5px;
+  padding: 2%; /* This might break what you've been doing already */
+  }
+  .our-modal form input {
+    padding: .2rem;
+  }
+  .close {
+    cursor: pointer;
+  }

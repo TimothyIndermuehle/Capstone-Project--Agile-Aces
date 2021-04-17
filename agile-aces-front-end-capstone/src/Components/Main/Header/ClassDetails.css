@@ -1,0 +1,77 @@
+#headerClassDetails {
+    grid-column: 1 / span 3;
+}
+.classInfo {
+    align-items: baseline;
+    display: grid;
+    flex-wrap: wrap;
+    grid-gap: 4%;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: flex-start;
+    margin-top: 2%;
+}
+.classInfoTeacherDes {
+    grid-column: 1 / span 1;
+}
+.classInfoAdditional {
+    grid-column: 2 / span 1;
+}
+#headerClassDetails .classInfo form {
+    display: grid;
+    grid-column: 1 / span 3;
+    grid-gap: 4%;
+}
+#headerClassDetails .days-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+} 
+.days {
+    text-transform: capitalize;
+} 
+#headerClassDetails .days-container input {
+    margin-left: .4em;
+    margin-right: .4em;
+}
+#headerClassDetails label {
+    font-size: 1.5rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#headerClassDetails h4 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.classInfo {
+    max-width: 98%;
+}
+
+  @media only screen and (max-width: 575.9px){
+    
+    .dates {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .times {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+    #headerClassDetails .editClass{
+        margin: 3%;
+    }
+    #headerClassDetails .editClass .classInfoAdditional {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+    #headerClassDetails .editClass .headerButtons {
+        grid-row: 3 / span 1;
+      }
+    #headerClassDetails .days-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+} 
+  }

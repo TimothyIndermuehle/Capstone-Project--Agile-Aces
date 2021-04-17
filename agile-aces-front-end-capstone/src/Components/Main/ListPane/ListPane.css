@@ -1,0 +1,39 @@
+.listPane {
+  background-color: white;
+  border-radius: 8px;
+  grid-area: mainBottom;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 7%;
+  padding-bottom: 4%;
+}
+.listPane {
+  color: black;
+  font-size: 1rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+.listClasses {
+  border-color: #8A9968;
+  border-radius: 4px;
+  border: solid;
+  border-width: 1px;
+  margin-left: 4%;
+  margin-right: 4%;
+  padding: 2%;
+}
+
+@media only screen and (max-width: 575.9px) {
+  .listPane{
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px){
+  .listPane{
+    margin-left: 2%;
+    margin-right: 2%;
+    max-width: 96%;
+  }  
+}

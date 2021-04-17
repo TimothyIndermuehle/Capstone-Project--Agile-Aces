@@ -1,0 +1,39 @@
+.main-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto 2fr;
+  grid-template-areas:
+  "title"
+  "mainTop"
+  "mainSearchBar"
+  "mainBottom"; 
+  height: 100vh;
+}
+.main-search {
+  background-color: white;
+  grid-area: mainSearchBar;
+  justify-content: center;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+#mainSearch {
+  margin: 4%;
+}
+#main-search input{
+  margin-left: 1rem;
+}
+
+
+@media only screen and (max-width: 576px) {
+  .main-search{
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .main-search{
+    margin-left: 2%;
+    margin-right: 2%;
+  } 
+}

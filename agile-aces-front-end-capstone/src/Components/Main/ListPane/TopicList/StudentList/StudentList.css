@@ -1,0 +1,189 @@
+
+.hidden {
+    display: none;
+}
+
+#topicView {
+  padding: 0;
+}
+.checkEdit{
+  justify-self: flex-end;
+  grid-row: 1 / span 1;
+  grid-column: 6 / span 1;
+}
+.questionList .questionListItem .voteQuestion {
+  grid-column: 6 / span 1;
+  grid-row: 2 / span 1;
+  justify-self: flex-end;
+  column-gap: 0px;
+}
+.questionList .questionListItem .editQuestion {
+  grid-column: 4 / span 2;
+  grid-row: 2 / span 1;
+  justify-self: end;
+}
+.questionList .questionListItem .questionVoteParagraph {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+  justify-self: start;
+}
+.questionList .questionListItem .questionQuestion {
+  align-self: left;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 6;
+  justify-self: start;
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: left;
+  word-wrap: break-word;
+}
+.questionQuestion {
+  max-width: 100%;
+}
+.topicStudent {
+  border-bottom: solid #8A9968 1px;
+  display: grid;
+  box-shadow: 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 8px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr auto auto;
+  margin: 2% 4% 2% 4%;
+  padding: 2%;
+}
+.topicStudent:hover{
+  box-shadow: 0 6px 20px 0 rgba(0,0,0,0.35);
+}
+.topicStudent h3 {
+  grid-column: 1 / span 4;
+}
+
+.topicStudent p {
+  grid-column: 1 / span 4;
+  grid-row: 2 / span 1;
+  justify-self: start;
+}
+.topicStudent .questionList {
+  grid-column: 1 / span 6;
+  display: grid;
+}
+.add-vote {
+  background-color: #C63B3C;
+  box-shadow: 0 6px 20px 0 rgba(0,0,0,0.19);
+  color: white;
+  font-size: 1rem;
+  margin-right: 2%;
+}
+.add-vote:hover {
+  background-color: #8A9968;
+  color: white;
+  font-size: 1rem;
+}
+.btn{
+  margin: 3px;
+}
+
+.btn-main {
+  background-color: #8E8076;
+}
+
+.questionListItem p{
+  margin: 0;
+  padding: .25rem;
+}
+
+.editQuestion {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  justify-self: start;
+}
+.questionVoteParagraph {
+  grid-column: 1 / span 1;
+}
+.blank {
+  font-style: italic;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: .5rem;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.question-buttons{
+  display: flex;
+  grid-column: 2 / span 6;
+  grid-row: 2 / span 1;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+@media (min-width: 400px) and (max-width: 575.9px) {
+  .topicStudent p {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 1;
+    justify-self: start;
+  }
+  .view-create-buttons {
+    width: 100%;
+  }
+  .questionListButton {
+    width: 100%;
+  }
+  .topicStudent {
+    grid-template-rows: 1fr auto auto auto;
+  }
+  .topicStudent .create-question{
+    width: 100%;
+  }
+  .questionListItem {
+      grid-template-rows: 1fr auto auto;
+    }
+    .questionList .questionListItem .editQuestion {
+      grid-column: 4 / span 3;
+      grid-row: 3 / span 1;
+      justify-self: end;
+  
+    }
+    .questionList .questionListItem .questionVoteParagraph {
+      grid-column: 1 / span 6;
+      grid-row: 2 / span 1;
+      justify-self: start;
+    }
+    .questionList .questionListItem .voteQuestion {
+      grid-column: 6 / span 1;
+      grid-row: 2 / span 1;
+      justify-self: start;
+      column-gap: 0px;
+    }
+    .questionListButtons {
+      display: grid;
+    }
+}
+@media only screen and (max-width: 400px){
+  .questionListItem {
+      grid-template-rows: 1fr auto auto auto;
+    }
+    .questionList .questionListItem .editQuestion {
+      grid-column: 1 / span 6;
+      grid-row: 4 / span 1;
+      justify-self: start;
+  
+    }
+    .questionList .questionListItem .questionVoteParagraph {
+      grid-column: 1 / span 6;
+      grid-row: 2 / span 1;
+      justify-self: start;
+    }
+    .questionList .questionListItem .voteQuestion {
+      grid-row: 2 / span 1;
+      justify-self: end;
+      column-gap: 0px;
+    }
+    .question-buttons{
+      display: block;
+      grid-row: 3 / span 1;
+      grid-column: 1 / span 6;
+    }
+    .question-buttons button{
+      width: 100%;
+    }
+
+}
